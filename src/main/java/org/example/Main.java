@@ -10,14 +10,13 @@ public class Main {
         LocalDate today = LocalDate.now();
         LocalDate dateToTest = LocalDate.parse("2023-12-22");
 
-        System.out.println(now);
-        System.out.println(today);
-
         System.out.println(today.plusWeeks(2));
 
         isDate1BeforeDate2(today,dateToTest);
         System.out.println(calculateDifferenceInDays(today,dateToTest));
 
+        Animal tiggie = new Animal("Tiggie",LocalDate.parse("2018-10-10"));
+        tiggie.getDaysToNextBirthday();
 
     }
 
