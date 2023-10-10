@@ -2,7 +2,6 @@ package org.example;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
-import java.time.chrono.ChronoLocalDate;
 import java.time.temporal.ChronoUnit;
 
 public class Main {
@@ -22,13 +21,12 @@ public class Main {
 
     }
 
-    public static boolean isDate1BeforeDate2(LocalDate date1,LocalDate date2) {
+    public static void isDate1BeforeDate2(LocalDate date1, LocalDate date2) {
         if(date1.isBefore(date2)) {
             System.out.println(date1 + " is before " + date2);
-            return true;
+            return;
         }
         System.out.println(date1 + " is not before " + date2);
-        return false;
     }
 
     public static long calculateDifferenceInDays(LocalDate date1, LocalDate date2) {
